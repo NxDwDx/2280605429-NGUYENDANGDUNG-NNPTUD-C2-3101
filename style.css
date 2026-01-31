@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+/* ===== IMAGE 3x4 ===== */
+.product-img {
+  width: 120px;   /* 3 */
+  height: 160px;  /* 4 */
+  object-fit: cover;
+  border: 1px solid black;
+  background: #f0f0f0;
+}
+
+/* 👉 Nếu muốn 6x8, đổi thành:
+.product-img {
+  width: 180px;
+  height: 240px;
+}
+*/
+
+.description {
+  display: none;
+}
+
+td:hover .description {
+  display: block;
+}
+
+.pagination {
+  margin-top: 10px;
+}

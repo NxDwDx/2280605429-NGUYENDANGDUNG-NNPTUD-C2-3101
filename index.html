@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Product Dashboard</h1>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Search by title...">
+
+  <select id="pageSize">
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+  </select>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th onclick="sortByTitle()">Title ⬍</th>
+      <th onclick="sortByPrice()">Price ⬍</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody id="productBody"></tbody>
+</table>
+
+<div class="pagination">
+  <button onclick="prevPage()">Prev</button>
+  <span id="pageInfo"></span>
+  <button onclick="nextPage()">Next</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
